@@ -1,0 +1,367 @@
+/**************************/
+/* HERO SECTION */
+/**************************/
+.hero-section {
+    background-color: var(--color-backround);
+    padding: 4.8rem 0 9.6rem;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    gap: 9.6rem;
+    padding: 0 3.2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-boximg img {
+    width: 100%;
+}
+
+.hero-decription {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 3.2rem 0 4.8rem;
+}
+
+.hero-buttons {
+    margin-bottom: 8rem;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.hero-delivered {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.hero-imgs {
+    display: flex;
+}
+
+.hero-imgs img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid var(--color-backround);
+}
+
+.hero-imgs img:last-child {
+    margin-right: 0;
+}
+
+.hero-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero-text strong {
+    color: var(--color-tint1);
+    font-weight: 700;
+}
+
+/**************************/
+/* HEADER SECTION */
+/**************************/
+.header {
+    padding: 2.7rem 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-backround);
+}
+
+.header-logo img {
+    width: 16.4rem;
+}
+
+.nav-container {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.nav-item,
+.nav-item:link,
+.nav-item:visited {
+    text-decoration: none;
+    color: var(--color-greays333);
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    color: var(--color-tint1);
+}
+
+/**************************/
+/* FEATURED SECTION */
+/**************************/
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 4.8rem 0 3.2rem;
+}
+
+.featured-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+.featured-logos {
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+.featured-logos img {
+    height: 100%;
+    filter: contrast(0) brightness(0.7);
+}
+
+/**************************/
+/* HOW SECTION */
+/**************************/
+.how {
+    padding: 9.6rem 0;
+}
+
+.how-content {
+    gap: 6.4rem;
+}
+
+.how-text {
+    display: flex;
+    align-items: center;
+}
+
+.how-number {
+    color: #ddd;
+    font-size: 8.6rem;
+    font-weight: 600;
+}
+
+.how-title {
+    margin: 1.2rem 0 3.6rem;
+}
+
+.how-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.how-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.how-img img {
+    width: 35%;
+}
+
+.how-img::after {
+    content: "";
+    position: absolute;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    background-color: var(--color-tint2);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.how-img::before {
+    content: "";
+    position: absolute;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    background-color: var(--color-backround);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/**************************/
+/* MEALS SECTION */
+/**************************/
+.meals {
+    padding: 9.6rem 0;
+}
+
+.meals-text {
+    text-align: center;
+}
+
+.meals-card {
+    border-radius: 1.1rem;
+    overflow: hidden;
+    box-shadow: 0px 3.2rem 6.4rem 0px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+}
+
+.meals-card:hover,
+.meals-card:active {
+    transform: translateY(-1rem);
+    box-shadow: 0px 1.6rem 6.4rem 0px rgba(0, 0, 0, 0.1);
+}
+
+.meals-container {
+    gap: 6.4rem;
+}
+
+.meals-content {
+    padding: 3.2rem 4.8rem 4.8rem;
+
+}
+
+.meals-card img {
+    width: 100%;
+}
+
+.meals-title {
+    color: var(--color-greays333);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 1.2rem 0 3.2rem;
+}
+
+.meals-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.6rem;
+}
+
+.meals-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.meals-item strong {
+    font-weight: 500;
+}
+
+.meals-item i {
+    color: var(--color-primary);
+    width: 2.4rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diet {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.diet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.diet-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.diet-item span {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.diet-item i {
+    color: var(--color-primary);
+    width: 2.4rem;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-recipes {
+    margin-top: 4.8rem;
+    text-align: center;
+}
+
+.all-recipes a,
+.all-recipes a:link,
+.all-recipes a:visited{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+.testimonials {
+    background-color: var(--color-backround);
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.testimonials-text {
+    padding: 9.6rem;
+    align-self: center;
+}
+
+.testimonials-content {
+    gap: 8rem;
+}
+
+.testimonials-item img {
+    width: 6.4rem;
+    border-radius: 50%;
+}
+
+.testimonials-speech {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 1.4rem 0 1.6rem;
+}
+
+.testimonials-name {
+    font-size: 1.6rem;
+}
+
+.testimonials-gallery {
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.testimonials-img {
+    overflow: hidden;
+}
+
+.testimonials-gallery img {
+    width: 100%;
+    transition: all .3s;
+}
+
+.testimonials-gallery img:hover {
+    transform: scale(1.1);
+}
