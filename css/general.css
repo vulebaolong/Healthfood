@@ -14,6 +14,7 @@ Default: 1
 #fdf2e9
 #f8d8bd
 #cf711f
+#45260a
 background: #fdf2e9
 - Shades:
 - Acents: 
@@ -40,9 +41,13 @@ border-radius: 11px;
     --color-backround: #fdf2e9;
     --color-tint1: #cf711f;
     --color-tint2: #f8d8bd;
+    --color-tint3: #45260a;
     --color-greays333: #333;
     --color-greays555: #555;
     --color-greays888: #888;
+    --color-greayseee: #eee;
+    --border-radius1-1: 1.1rem;
+    --border-radius0-9: 0.9rem;
 }
 
 /* reset css */
@@ -84,6 +89,14 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--4-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-col {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 /**************************/
 /* BUTTON SECTION */
 /**************************/
@@ -94,6 +107,7 @@ body {
     border-radius: 9px;
     text-decoration: none;
     transition: all .3s;
+    cursor: pointer;
 }
 
 .btn-primary,
@@ -137,12 +151,32 @@ body {
     background-color: var(--color-primary);
 }
 
+.btn-submit,
+.btn-submit:link,
+.btn-submit:visited{
+    background-color: var(--color-tint3);
+    color: var(--color-backround);
+    padding: 1.2rem;
+    border-radius: var(--border-radius0-9);
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+    background-color: #fff;
+    color: var(--color-greays333);
+}
+
 .subheading {
     color: var(--color-tint1);
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 0.75px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .heading {
@@ -190,4 +224,34 @@ body {
 
 .tag-paleo {
     background-color: #ffd43b;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-item span {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.list-item i {
+    color: var(--color-primary);
+    width: 2.4rem;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fl-1 {
+    flex: 1;
 }
