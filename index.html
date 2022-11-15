@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood</title>
 
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,10 +20,11 @@
 
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/queries.css">
 </head>
 
-<body>
-    <header class="header">
+<body>    
+    <header class="header "> <!-- nav-mobile--open -->
         <div class="header-logo">
             <img src="./img/omnifood-logo.png" alt="logo omnifood">
         </div>
@@ -33,6 +37,10 @@
                 <li><a href="#" class="btn btn-cta">Try for free</a></li>
             </ul>
         </nav>
+        <div class="nav-mobile">
+            <i class="fa fa-bars nav-icon-open"></i>
+            <i class="fa fa-times nav-icon-close"></i>
+        </div>
     </header>
 
     <main>
@@ -77,8 +85,7 @@
             </div>
         </section>
 
-        <section class="how-section">
-            <div class="how">
+        <section class="how-section">            
                 <div class="container">
                     <span class="subheading">how it works</span>
                     <h2 class="heading heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -126,8 +133,7 @@
                             <img src="./img/app/app-screen-3.png" alt="app mobile omnifood sreen 3">
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>            
         </section>
 
         <section class="meals-section">
@@ -358,24 +364,25 @@
                         <form action="#" method="get" class="cta-form grid grid--2-col">
                             <div class="cta-fullname cta-item">
                                 <label for="fname">Full Name</label>
-                                <input type="text" id="fname" name="fname" placeholder="John Smith">
+                                <input required type="text" id="fname" name="fname" placeholder="John Smith">
                             </div>
 
                             <div class="cta-email cta-item">
                                 <label for="email">Email address</label>
-                                <input type="text" id="email" name="email" placeholder="me@example.com">
+                                <input required type="email" id="email" name="email" placeholder="me@example.com">
                             </div>
 
                             <div class="cta-wherehear cta-item">
                                 <label for="wh">Where did you hear from us?</label>
-                                <select name="wh" id="wh">
-                                    <option value="Please">Please choose one option:</option>
+                                <select required name="wh" id="wh">
+                                    <option value="">Please choose one option:</option>
                                     <option value="friends-and-family">Friends and family</option>
                                     <option value="youTube">YouTube video</option>
                                     <option value="facebook-ad">Facebook ad</option>
                                     <option value="others">Others</option>
                                 </select>
                             </div>
+
                             <div class="cta-submit">
                                 <input type="submit" value="Sign up now" class="btn btn-submit">
                             </div>
@@ -388,27 +395,28 @@
             </div>
         </section>
     </main>
+
     <footer class="footer-section">
         <div class="container grid grid--5-col footer">
-            <div class="footer-logo footer-item">
+            <div class="footer-item footer-logo">
                 <img src="./img/omnifood-logo.png" alt="">
                 <div class="footer-content fl-1">
                     <div class="footer-social">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                     <p class="footer-copyright">Copyright © 2022 by Omnifood, Inc. All rights reserved.</p>
                 </div>
             </div>
-            <div class="footer-contacts footer-item">
+            <div class="footer-item footer-contacts">
                 <div class="footer-heading">
                     <p>Contact us</p>
                 </div>
                 <ul class="footer-content fl-1">
                     <li><a href="#" class="footer-address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</a></li>
-                    <li><a href="#" class="footer-number">415-201-6370</a></li>
-                    <li><a href="#" class="footer-email">hello@omnifood.com</a></li>
+                    <li><a href="tel:0836789578" class="footer-number">083.6789.578</a></li>
+                    <li><a href="mailto:vulebaolong@gmail.com" class="footer-email">vulebaolong@gmail.com</a></li>
                 </ul>
             </div>
             <div class="footer-item">
