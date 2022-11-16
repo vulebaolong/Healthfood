@@ -76,6 +76,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-backround);
+    transition: all .5s;
 }
 
 .header-logo img {
@@ -550,7 +551,7 @@ Cách 2
 }
 
 .footer-logo img {
-    width: 75%;
+    width: 100%;
 }
 
 .footer-social {
@@ -621,6 +622,11 @@ Cách 2
     width: 100%;
 }
 
+.logo-footer {
+    width: 70%;
+}
+
+
 /**************************/
 /* MOBILE SECTION */
 /**************************/
@@ -635,4 +641,60 @@ Cách 2
 
 .nav-mobile .fa-times {
     display: none;    
+}
+
+
+/**************************/
+/* BACK TO TOP SECTION */
+/**************************/
+.backtotop,
+.backtotop:link,
+.backtotop:visited {
+    right: 6rem;
+    bottom: 4rem;
+    width: 4.8rem;
+    height: 4.8rem;
+
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.4rem;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0px 1.6rem 3.2rem 0px rgba(0, 0, 0, 0.1);
+    transition: all ease-out .3s;
+    transform: scale(0);
+}
+.backtotop.btt-show {
+    transform: scale(1);
+}
+
+.backtotop:hover,
+.backtotop:active {
+    background-color: var(--color-tint1);
+    transform: scale(1.2);
+    box-shadow: 0px 1.6rem 3.2rem 0px rgba(0, 0, 0, 0.1);
+}
+
+.backtotop i,
+.backtotop:link i,
+.backtotop:visited i {
+    transition: all ease-out .3s;
+}
+
+.backtotop:hover i,
+.backtotop:active i {
+    transform: rotate(360deg);
+}
+
+
+.backtotop:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }

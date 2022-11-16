@@ -24,7 +24,8 @@ background: #fdf2e9
 #888
 
 ----- 05 SHADOWS -----
-box-shadow: #000000 0px 32px 64px 0px;
+box-shadow: 0px 3.2rem 6.4rem 0px rgba(0, 0, 0, 0.1);
+
 
 input
 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -60,8 +61,8 @@ border-radius: 11px;
     padding: 0;
 }
 
-*:focus { 
-    outline: none; 
+*:focus {
+    outline: none;
     box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
     /* border-radius: 9rem; */
 }
@@ -71,7 +72,7 @@ html {
     /* 10px / 16px = 0.625 = 62.5% */
     font-size: 62.5%;
     overflow-x: hidden;
-
+    scroll-padding-top: 4.8rem;
 }
 
 body {
@@ -150,15 +151,16 @@ select {
     font-size: 2.0rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
-    box-shadow: 0 0 0  rgba(230, 125, 34, 0.5), inset 0 0 0 0.3rem #fff;
+    box-shadow: 0 0 0 rgba(230, 125, 34, 0.5), inset 0 0 0 0.3rem #fff;
 }
 
 .btn-outline:hover,
 .btn-outline:active {
     background-color: var(--color-backround);
 }
+
 .btn-outline:focus {
-    outline: none; 
+    outline: none;
     box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
@@ -174,7 +176,7 @@ select {
 
 .btn-submit,
 .btn-submit:link,
-.btn-submit:visited{
+.btn-submit:visited {
     background-color: var(--color-tint3);
     color: var(--color-backround);
     padding: 1.2rem;
@@ -190,8 +192,9 @@ select {
     background-color: #fff;
     color: var(--color-greays333);
 }
+
 .btn-submit:focus {
-    outline: none; 
+    outline: none;
     box-shadow: 0 0 0 0.8rem rgb(248, 216, 189, 0.7);
 }
 
@@ -280,3 +283,16 @@ select {
 .fl-1 {
     flex: 1;
 }
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 9.6rem;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    transition: all .3s;
+    box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.1);
+}
+

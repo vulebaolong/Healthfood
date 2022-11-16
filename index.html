@@ -7,34 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood</title>
 
+    <!-- icon web 64x64 -->
     <link rel="icon" href="img/favicon.png" />
+    <!-- icon web apple 180x180 -->
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!-- icon web android favicon-192.png 192x192 favicon-512 512x512 -->
+    <link rel="manifest" href="manifest.webmanifest" />
 
+    <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/queries.css">
+
+    <!-- JS -->
+    <script defer src="./js/index.js"></script>
 </head>
 
-<body>    
-    <header class="header "> <!-- nav-mobile--open -->
+<body>
+    <header class="header">
+        <!-- nav-mobile--open -->
         <div class="header-logo">
-            <img src="./img/omnifood-logo.png" alt="logo omnifood">
+            <a href="#"><img src="./img/omnifood-logo.png" alt="logo omnifood"></a>
         </div>
         <nav class="header-nav">
             <ul class="nav-container">
-                <li><a href="#" class="nav-item">How it works</a></li>
-                <li><a href="#" class="nav-item">Meals</a></li>
-                <li><a href="#" class="nav-item">Testimonials</a></li>
-                <li><a href="#" class="nav-item">Pricing</a></li>
-                <li><a href="#" class="btn btn-cta">Try for free</a></li>
+                <li><a href="#how" class="nav-item">How it works</a></li>
+                <li><a href="#meals" class="nav-item">Meals</a></li>
+                <li><a href="#testimonials" class="nav-item">Testimonials</a></li>
+                <li><a href="#pricing" class="nav-item">Pricing</a></li>
+                <li><a href="#cta" class="btn btn-cta">Try for free</a></li>
             </ul>
         </nav>
         <div class="nav-mobile">
@@ -51,8 +62,8 @@
                     <p class="hero-decription">The smart 365-days-per-year food subscription that will make you eat
                         healthy again. Tailored to your personal tastes and nutritional needs.</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary">Start eating well</a>
-                        <a href="#" class="btn btn-outline">Learn more ↓</a>
+                        <a href="#cta" class="btn btn-primary">Start eating well</a>
+                        <a href="#how" class="btn btn-outline">Learn more ↓</a>
                     </div>
                     <div class="hero-delivered">
                         <div class="hero-imgs">
@@ -85,58 +96,58 @@
             </div>
         </section>
 
-        <section class="how-section">            
-                <div class="container">
-                    <span class="subheading">how it works</span>
-                    <h2 class="heading heading-secondary">Your daily dose of health in 3 simple steps</h2>
-                    <div class="how-content grid grid--2-col">
-                        <div class="how-text">
-                            <div class="how-texbox">
-                                <p class="how-number">01</p>
-                                <h3 class="how-title heading heading-tertiary">Tell us what you like (and what not)
-                                </h3>
-                                <p class="how-description">Never again waste time thinking about what to eat! Omnifood
-                                    AI
-                                    will create a 100% personalized weekly meal plan just for you. It makes sure you get
-                                    all
-                                    the nutrients and vitamins you need, no matter what diet you follow!</p>
-                            </div>
-                        </div>
-                        <div class="how-img">
-                            <img src="./img/app/app-screen-1.png" alt="app mobile omnifood sreen 1">
-                        </div>
-                        <div class="how-img">
-                            <img src="./img/app/app-screen-2.png" alt="app mobile omnifood sreen 2">
-                        </div>
-                        <div class="how-text">
-                            <div class="how-texbox">
-                                <p class="how-number">02</p>
-                                <h3 class="how-title heading heading-tertiary">Approve your weekly meal plan
-                                </h3>
-                                <p class="how-description">Once per week, approve the meal plan generated for you by
-                                    Omnifood AI. You can change ingredients, swap entire meals, or even add your own
-                                    recipes.</p>
-                            </div>
-                        </div>
-                        <div class="how-text">
-                            <div class="how-texbox">
-                                <p class="how-number">03</p>
-                                <h3 class="how-title heading heading-tertiary">Receive meals at convenient time
-                                </h3>
-                                <p class="how-description">Best chefs in town will cook your selected meal every day,
-                                    and we
-                                    will deliver it to your door whenever works best for you. You can change delivery
-                                    schedule and address daily!</p>
-                            </div>
-                        </div>
-                        <div class="how-img">
-                            <img src="./img/app/app-screen-3.png" alt="app mobile omnifood sreen 3">
+        <section class="how-section" id="how">
+            <div class="container">
+                <span class="subheading">how it works</span>
+                <h2 class="heading heading-secondary">Your daily dose of health in 3 simple steps</h2>
+                <div class="how-content grid grid--2-col">
+                    <div class="how-text">
+                        <div class="how-texbox">
+                            <p class="how-number">01</p>
+                            <h3 class="how-title heading heading-tertiary">Tell us what you like (and what not)
+                            </h3>
+                            <p class="how-description">Never again waste time thinking about what to eat! Omnifood
+                                AI
+                                will create a 100% personalized weekly meal plan just for you. It makes sure you get
+                                all
+                                the nutrients and vitamins you need, no matter what diet you follow!</p>
                         </div>
                     </div>
-                </div>            
+                    <div class="how-img">
+                        <img src="./img/app/app-screen-1.png" alt="app mobile omnifood sreen 1">
+                    </div>
+                    <div class="how-img">
+                        <img src="./img/app/app-screen-2.png" alt="app mobile omnifood sreen 2">
+                    </div>
+                    <div class="how-text">
+                        <div class="how-texbox">
+                            <p class="how-number">02</p>
+                            <h3 class="how-title heading heading-tertiary">Approve your weekly meal plan
+                            </h3>
+                            <p class="how-description">Once per week, approve the meal plan generated for you by
+                                Omnifood AI. You can change ingredients, swap entire meals, or even add your own
+                                recipes.</p>
+                        </div>
+                    </div>
+                    <div class="how-text">
+                        <div class="how-texbox">
+                            <p class="how-number">03</p>
+                            <h3 class="how-title heading heading-tertiary">Receive meals at convenient time
+                            </h3>
+                            <p class="how-description">Best chefs in town will cook your selected meal every day,
+                                and we
+                                will deliver it to your door whenever works best for you. You can change delivery
+                                schedule and address daily!</p>
+                        </div>
+                    </div>
+                    <div class="how-img">
+                        <img src="./img/app/app-screen-3.png" alt="app mobile omnifood sreen 3">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="meals-section">
+        <section class="meals-section" id="meals">
             <div class="meals">
                 <div class="container">
                     <div class="meals-text">
@@ -213,7 +224,7 @@
             </div>
         </section>
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <div class="testimonials">
                 <div class="testimonials-text">
                     <span class="subheading">testimonials</span>
@@ -287,7 +298,7 @@
             </div>
         </section>
 
-        <section class="pricing-section">
+        <section class="pricing-section" id="pricing">
             <div class="container">
                 <span class="subheading">PRICING</span>
                 <h2 class="heading heading-secondary">Eating well without breaking the bank</h2>
@@ -353,7 +364,7 @@
             </div>l
         </section>
 
-        <section class="cta-section">
+        <section class="cta-section" id="cta">
             <div class="container">
                 <div class="grid grid--3-col cta">
                     <div class="cta-text">
@@ -399,7 +410,7 @@
     <footer class="footer-section">
         <div class="container grid grid--5-col footer">
             <div class="footer-item footer-logo">
-                <img src="./img/omnifood-logo.png" alt="">
+                <a href="#" class="logo-footer"><img src="./img/omnifood-logo.png" alt=""></a>
                 <div class="footer-content fl-1">
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -454,6 +465,7 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="backtotop btt-show"><i class="fa fa-angle-up"></i></a>
 </body>
 
 </html>
