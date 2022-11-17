@@ -53,7 +53,7 @@
     border: 3px solid var(--color-backround);
 }
 
-.hero-imgs img:last-child {
+.hero-imgs picture:last-child {
     margin-right: 0;
 }
 
@@ -131,7 +131,8 @@
     gap: 5.5rem;
 }
 
-.featured-logos img {
+.featured-logos img,
+.featured-logos picture {
     height: 100%;
     filter: contrast(0) brightness(1);
 }
@@ -167,14 +168,15 @@
     line-height: 1.8;
 }
 
-.how-img {
+.how-img,
+.how-img picture {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 .how-img img {
-    width: 35%;
+    width: 50%;
 }
 
 .how-img::after {
@@ -315,6 +317,7 @@
 
 .testimonials-img {
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 
 .testimonials-gallery img {
@@ -474,7 +477,6 @@ Cách 2
     z-index: -1;
 }
 
-
 .cta-text {
     grid-column: 1 / 3;
     background-color: var(--color-primary);
@@ -530,7 +532,7 @@ Cách 2
 
 .cta-item input:focus,
 .cta-item select:focus {
-    outline: none; 
+    outline: none;
     box-shadow: 0 0 0 0.8rem rgb(248, 216, 189, 0.7);
 }
 
@@ -598,11 +600,11 @@ Cách 2
 
 .footer a,
 .footer a:link,
-.footer a:visited{
+.footer a:visited {
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    outline: none; 
+    outline: none;
     transition: all .3s;
 }
 
@@ -610,22 +612,21 @@ Cách 2
     content: "";
     position: absolute;
     width: 0;
-    height: 0.1rem;
-    background-color: var(--color-greays555);
+    height: 0.2rem;
+    background-color: var(--color-greays888);
     left: 0;
     top: 100%;
     transition: all .3s;
 }
 
 .footer a:hover::after,
-.footer a:active::after{    
+.footer a:active::after {
     width: 100%;
 }
 
 .logo-footer {
     width: 70%;
 }
-
 
 /**************************/
 /* MOBILE SECTION */
@@ -640,9 +641,8 @@ Cách 2
 }
 
 .nav-mobile .fa-times {
-    display: none;    
+    display: none;
 }
-
 
 /**************************/
 /* BACK TO TOP SECTION */
@@ -658,7 +658,7 @@ Cách 2
     background-color: var(--color-primary);
     border-radius: 50%;
     cursor: pointer;
-    
+
     position: fixed;
     display: flex;
     justify-content: center;
@@ -671,6 +671,7 @@ Cách 2
     transition: all ease-out .3s;
     transform: scale(0);
 }
+
 .backtotop.btt-show {
     transform: scale(1);
 }

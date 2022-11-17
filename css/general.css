@@ -52,6 +52,7 @@ border-radius: 11px;
     --color-greayseee: #eee;
     --border-radius1-1: 1.1rem;
     --border-radius0-9: 0.9rem;
+    --scroll-paddingtop: 9.6rem;
 }
 
 /* reset css */
@@ -72,7 +73,9 @@ html {
     /* 10px / 16px = 0.625 = 62.5% */
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-padding-top: 4.8rem;
+
+    /* phần đệm bù khi dùng header fix */
+    scroll-padding-top: calc(var(--scroll-paddingtop) / 2);
 }
 
 body {
@@ -87,6 +90,12 @@ input,
 option,
 select {
     font-family: inherit;
+}
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+    vertical-align: middle;
 }
 
 .container {
@@ -172,6 +181,11 @@ select {
     font-weight: 600;
     color: #fff;
     background-color: var(--color-primary);
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+    background-color: var(--color-tint1);
 }
 
 .btn-submit,
@@ -296,3 +310,7 @@ select {
     box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.1);
 }
 
+/* đệm thêm margin top bằng chiều cao của header */
+.header.sticky+main {
+    margin-top: var(--scroll-paddingtop);
+}
