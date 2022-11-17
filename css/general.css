@@ -302,7 +302,7 @@ img {
     position: fixed;
     top: 0;
     bottom: 0;
-    height: 9.6rem;
+    height: 8rem;
     width: 100%;
     background-color: #fff;
     z-index: 10;
@@ -311,6 +311,6 @@ img {
 }
 
 /* đệm thêm margin top bằng chiều cao của header */
-.header.sticky+main {
+/* .header.sticky+main {
     margin-top: var(--scroll-paddingtop);
-}
+} */
