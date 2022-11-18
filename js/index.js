@@ -3,6 +3,7 @@ const navMobileEl = document.querySelector('.nav-mobile')
 const headerEl = document.querySelector('.header')
 const heroEl = document.querySelector('.hero-section')
 const backtotopEl = document.querySelector('.backtotop')
+const pricingEl = document.querySelector('.pricing-item')
 
 // click hide show nav mobile
 navMobileEl.addEventListener('click', (e) => {
@@ -18,6 +19,9 @@ option = {
 function handleObs([e], observer) {
     headerEl.classList.toggle('sticky', !e.isIntersecting)
     backtotopEl.classList.toggle('btt-show', !e.isIntersecting)   
+    
+   
+    backtotopEl.innerHTML = pricingEl.offsetWidth  + ' x ' + window.innerWidth
 }
 const obs = new IntersectionObserver(handleObs, option)
 obs.observe(heroEl)
