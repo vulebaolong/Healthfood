@@ -71,6 +71,11 @@ border-radius: 11px;
 html {
     /* fone-size: 10px; */
     /* 10px / 16px = 0.625 = 62.5% */
+    /* 9px / 16px = 0.5625 = 56.25% */
+    /* 8px / 16px = 0.5 = 50% */
+    /* 7px / 16px = 0.4375 = 43.75% */
+    /* 6px / 16px = 0.375 = 37.5% */
+    /* 5px / 16px = 0.3125 = 31.25% */
     font-size: 62.5%;
     /* font-size: calc(15px + 0.390625vw); */
     overflow-x: hidden;
@@ -94,15 +99,17 @@ select {
 }
 
 img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
+    border: 0;
+    /* 1 */
+    -ms-interpolation-mode: bicubic;
+    /* 2 */
     vertical-align: middle;
 }
 
 .container {
-    max-width: 120rem;
+    max-width: 140rem;
     margin: 0 auto;
-    padding: 0 3.2rem;
+    padding: 0 2.5%;
 }
 
 .grid {
@@ -136,13 +143,17 @@ img {
     text-decoration: none;
     transition: all .3s;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-primary,
 .btn-primary:link,
 .btn-primary:visited {
-    padding: 1.6rem 3.2rem;
-    font-size: 2.0rem;
+    padding: 1.6em 3.2em;
+    font-size: 2.0em;
     font-weight: 600;
     color: #fff;
     background-color: var(--color-primary);
@@ -229,7 +240,9 @@ img {
 }
 
 .heading-primary {
-    font-size: 5.2rem;
+    /* font-size: 5.2rem; */
+    font-size: 5.2em;
+    /* font-size: 3.385416vw; */
     line-height: 1.05;
 }
 
