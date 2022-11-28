@@ -21,7 +21,7 @@ function handleObs([e], observer) {
     backtotopEl.classList.toggle('btt-show', !e.isIntersecting)   
     
    
-    backtotopEl.innerHTML = pricingEl.offsetWidth  + ' x ' + window.innerWidth
+    // backtotopEl.innerHTML = pricingEl.offsetWidth  + ' x ' + window.innerWidth
 }
 const obs = new IntersectionObserver(handleObs, option)
 obs.observe(heroEl)

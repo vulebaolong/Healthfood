@@ -3,28 +3,27 @@
 /**************************/
 .hero-section {
     background-color: var(--color-backround);
-    padding: 4.8rem 0 9.6rem;
+    padding: 9.6rem 0;
 }
 
-.hero {
-    max-width: 130rem;
-    margin: 0 auto;
+.hero_grid {
     gap: 9.6rem;
-    padding: 0 3.2rem;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.hero-boximg img {
+
+.hero-boximg,
+.hero-boximg img,
+.hero-boximg picture {
     width: 100%;
 }
 
 .hero-decription {
-    font-size: 2rem;
+    font-size: 2em;
     line-height: 1.6;
     margin: 3.2rem 0 4.8rem;
 }
@@ -108,6 +107,10 @@
 /**************************/
 /* FEATURED SECTION */
 /**************************/
+.featured-section {
+    padding: 9.6rem 0 0;
+}
+
 .featured {
     display: grid;
     justify-items: center;
@@ -125,17 +128,18 @@
 }
 
 .featured-logos {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
     gap: 5.5rem;
     justify-items: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 .featured-logo-item,
 .featured-logos picture,
-.featured-logos img{
+.featured-logos img {
     height: 3.2rem;
 }
 
@@ -147,7 +151,7 @@
 /* HOW SECTION */
 /**************************/
 .how-section {
-    padding: 9.6rem 0;
+    padding: 9.6rem 20px;
 }
 
 .how-content {
@@ -241,7 +245,6 @@
 
 .meals-content {
     padding: 3.2rem 4.8rem 4.8rem;
-
 }
 
 .meals-card img {
@@ -339,17 +342,14 @@
 /* TESTIMONIALS SECTION */
 /**************************/
 .pricing-section {
-    /* padding: 9.6rem; */
+    padding: 9.6rem 0;
 }
 
 .pricing-content {
     text-align: center;
     gap: 6.4rem;
-    background-color: aqua;
     justify-items: center;
 }
-
-
 
 .pricing-item {
     background-color: var(--color-backround);
@@ -359,7 +359,6 @@
 }
 
 .pricing-frist {
-    /* justify-self: end; */
     box-shadow: inset 0 0 0 3px var(--color-backround);
     background-color: #fff;
 }
@@ -414,14 +413,18 @@
     text-align: center;
     margin-top: 4.8rem;
 }
+
 .pricing-info {
     margin: 4.8rem 0;
-    
 }
 
 /**************************/
 /* FEATURES SECTION */
 /**************************/
+.features-section {
+    padding: 9.6rem 0;
+}
+
 .features {
     gap: 6.4rem;
 }
@@ -454,7 +457,7 @@
 /* CTA SECTION */
 /**************************/
 .cta-section {
-    padding: 9.6rem 0;
+    padding: 9.6rem 2rem;
     border-bottom: solid 1px var(--color-greayseee);
 }
 
@@ -548,12 +551,14 @@ Cách 2
 /**************************/
 /* FOOTER SECTION */
 /**************************/
-.footer-section {
-    padding: 9.6rem 0;
+.footer {
+    display: grid;
+    gap: 6.4rem;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.footer {
-    gap: 6.4rem;
+.footer-section {
+    padding: 9.6rem 0;
 }
 
 .footer-logo,
@@ -642,7 +647,6 @@ Cách 2
 /**************************/
 .nav-mobile {
     display: none;
-    width: 6.4rem;
     font-size: 3.6rem;
     justify-content: center;
     align-items: center;
@@ -659,8 +663,8 @@ Cách 2
 .backtotop,
 .backtotop:link,
 .backtotop:visited {
-    right: 6rem;
-    bottom: 4rem;
+    right: 2rem;
+    bottom: 2rem;
     width: 4.8rem;
     height: 4.8rem;
 
@@ -674,7 +678,7 @@ Cách 2
     align-items: center;
 
     font-size: 2.4rem;
-    color: black;
+    color: white;
     text-decoration: none;
     box-shadow: 0px 1.6rem 3.2rem 0px rgba(0, 0, 0, 0.1);
     transition: all ease-out .3s;
