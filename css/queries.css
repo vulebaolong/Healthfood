@@ -6,10 +6,10 @@
 /* 5px / 16px = 0.3125 = 31.25% */
 
 /* 1800px => 112.5em */
-@media (min-width: 1800px) {}
+@media only screen and (min-width: 1800px) {}
 
 /* 1800px => 112.5em */
-@media (max-width: 1799.50px) {
+@media only screen and (max-width: 1799.50px) {
     .container {
         max-width: 1400px;
         margin: 0 auto;
@@ -19,7 +19,7 @@
 
 
 /* 1400px => 87.5em => X-Large devices (large desktops, less than 1400px)*/
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -28,7 +28,7 @@
 }
 
 /* 1200px => 75em => Large devices (desktops, less than 1200px)*/
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .container {
         max-width: 992px;
         margin: 0 auto;
@@ -41,7 +41,7 @@
 }
 
 /* 992px => 62em => Medium devices (tablets, less than 992px)*/
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     html {
         font-size: 50%;
     }
@@ -146,7 +146,7 @@
 }
 
 /* 768px => 48em => Small devices (landscape phones, less than 768px)*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     html {
         font-size: 43.75%;
     }
@@ -219,7 +219,7 @@
 }
 
 /* 576px => 36em => X-Small devices (portrait phones, less than 576px)*/
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     html {
         font-size: 37.5%;
     }
@@ -281,7 +281,7 @@
 }
 
 /* 360px => 22.5em => X-Small devices (mini phones, less than 576px)*/
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     html {
         font-size: 31.25%;
     }

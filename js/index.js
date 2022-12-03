@@ -43,3 +43,15 @@ allLinks.forEach(e => {
     }
 
 })
+
+let width_device_El = document.querySelector('.width-device')
+let height_device_El = document.querySelector('.height-device')
+// console.log(width_device_El);
+// width_device_El.textContent = window.innerWidth
+
+
+addEventListener('scroll', (event) => {
+    width_device_El.textContent = window.screen.width
+    height_device_El.textContent = window.screen.height
+});
+
