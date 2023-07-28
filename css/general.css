@@ -39,7 +39,7 @@ border-radius: 11px;
 - spacing system (px)    
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 88 / 96 / 128
 */
-
+/* 
 :root {
     --color-primary: #e67e22;
     --color-backround: #fdf2e9;
@@ -50,6 +50,22 @@ border-radius: 11px;
     --color-greays555: #555;
     --color-greays888: #888;
     --color-greayseee: #eee;
+    --border-radius1-1: 1.1rem;
+    --border-radius0-9: 0.9rem;
+    --scroll-paddingtop: 9.6rem;
+} */
+
+:root {
+    --color-primary: #3bc51c;
+    --color-backround: #ebfde9;
+    --color-tint1: #4bcf1f;
+    --color-tint2: #ccf8bd;
+    --color-tint3: #0f450a;
+    --color-greays333: #333333;
+    --color-greays555: #555;
+    --color-greays888: #888;
+    --color-greayseee: #eee;
+    --color-boxhadow: 70, 230, 34;
     --border-radius1-1: 1.1rem;
     --border-radius0-9: 0.9rem;
     --scroll-paddingtop: 9.6rem;
@@ -64,7 +80,7 @@ border-radius: 11px;
 
 *:focus {
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+    box-shadow: 0 0 0 0.8rem rgba(var(--color-boxhadow), 0.5);
     /* border-radius: 9rem; */
 }
 
@@ -170,7 +186,7 @@ img {
     font-size: 2.0rem;
     font-weight: 600;
     padding: 1.2em 2.2em;
-    box-shadow: 0 0 0 rgba(230, 125, 34, 0.5), inset 0 0 0 0.3rem #fff;
+    box-shadow: 0 0 0 rgba(var(--color-boxhadow), 0.5), inset 0 0 0 0.3rem #fff;
 }
 
 .btn-outline:hover,
@@ -180,7 +196,7 @@ img {
 
 .btn-outline:focus {
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+    box-shadow: 0 0 0 0.8rem rgba(var(--color-boxhadow), 0.5);
 }
 
 .btn-cta,
@@ -219,7 +235,7 @@ img {
 
 .btn-submit:focus {
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgb(248, 216, 189, 0.7);
+    box-shadow: 0 0 0 0.8rem rgba(var(--color-boxhadow), 0.7);
 }
 
 .subheading {
