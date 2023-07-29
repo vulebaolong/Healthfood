@@ -6,10 +6,6 @@
 
 Healthfood is a website that introduces a health food store offering daily delivery of nutritious meals to your doorstep. It provides a free menu list of expert-researched health foods to promote a healthy lifestyle.
 
-## Team Members
-
-- Front-end Developer: Vũ Lê Bảo Long
-
 ## Features
 
 - Analyze design and receive requirements from team members and clients.
